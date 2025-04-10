@@ -12,7 +12,7 @@ body{
     font-size: 200%;
     display: flex;
     justify-content: center;
-    background-color: #2171cd;
+    background: linear-gradient(135deg, #59ffb7 0%, #549eff 100%);
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -43,7 +43,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffea00; /* Жёлтый фон */
+    background-color: #ffea00; /* dzeltena fons */
     border: none;
     border-radius: 10px;
     padding: 10px;
@@ -153,4 +153,3 @@ transform: translateY(-5px);     /*animacija pogam*/
 box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 transform: scale(1.05);
 }
-

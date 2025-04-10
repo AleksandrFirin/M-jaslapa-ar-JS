@@ -1,14 +1,16 @@
-let randomNumber1 = Math.floor(Math.random() * 2) + 1;
-let randomNumber2 = Math.floor(Math.random() * 2) + 1;
 
 
-let image1 = "/PD/atteli/im" + randomNumber1 + ".png"
-console.log(image1)
-let attels1 = document.querySelectorAll("img")[0]
-attels1.setAttribute("src", image1)
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 
+                13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
 
+const userInput = prompt("Ievadiet skaitli priekš massīva(no 1 līdz 22) filtrēšanas (2, 3 vai 5):");
+const inputs = Number(userInput);
 
-let image2 = "/PD/atteli/im" + randomNumber2 + ".png"
-console.log(image1)
-let attels2 = document.querySelectorAll("img")[1]
-attels2.setAttribute("src", image2)
+function filtresana(){
+    if ([2, 3, 5].includes(inputs)) {
+        const filteredNumbers = numbers.filter(num => num % inputs === 0);
+        console.log(`Skaitļi kuri dalās ar ${divisor}:`, filteredNumbers);
+    } else {
+        filtresana()
+    }
+}
